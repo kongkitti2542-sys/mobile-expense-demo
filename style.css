@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: auto; max-width: 44rem; padding: 1rem; font: 1.05rem/1.6 system-ui, sans-serif; color: #153138; background: #f4f9f8; }
+form, li { padding: 1rem; border: 1px solid #698481; border-radius: .6rem; background: white; }
+form label { display: block; margin-bottom: .6rem; }
+input, select, button { font: inherit; min-height: 44px; padding: .3rem .5rem; max-width: 100%; }
+button { margin: .2rem; }
+ul { padding: 0; list-style: none; }
+li { margin-bottom: .5rem; }

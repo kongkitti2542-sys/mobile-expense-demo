@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="th">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>บันทึกรายรับรายจ่าย</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.mjs"></script>
+<h1>บันทึกรายรับรายจ่าย</h1>
+<form id="entry">
+  <label>ประเภท <select name="kind"><option value="income">รายรับ</option><option value="expense">รายจ่าย</option></select></label>
+  <label>หมวดหมู่ <select name="category"><option>งาน</option><option>อาหาร</option><option>เดินทาง</option><option>อื่น ๆ</option></select></label>
+  <label>วันที่ <input required name="date" type="date" min="2000-01-01" max="2099-12-31"></label>
+  <label>จำนวนเงิน (บาท) <input required name="amount" inputmode="decimal" placeholder="25.90"></label>
+  <button>บันทึก</button>
+  <button id="cancel" type="button" hidden>ยกเลิกการแก้ไข</button>
+</form>
+<p id="status" role="status"></p>
+<label>กรองตามเดือน <input id="month" type="month"></label>
+<button id="clear" type="button">แสดงทุกเดือน</button>
+<button id="export" type="button">ส่งออก CSV</button>
+<p id="totals" aria-live="polite"></p>
+<ul id="entries"></ul>
+</html>
